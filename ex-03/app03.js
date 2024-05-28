@@ -18,10 +18,10 @@ const inputUsername = document.getElementById('username')
 const btnValidate = document.getElementById('btn-validate')
 const mainBlock = document.querySelector('main')
 
-btnValidate.addEventListener('click', () => (
+btnValidate.addEventListener('click', () => {
     const username = inputUsername.value
     render(username)
-))
+})
 
 function render(username) {
 

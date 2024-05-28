@@ -13,7 +13,7 @@ function sum(num1, num2) {
 
 function render(num1,num2,total) {
     const divApp = document.getElementById('app')
-    const txt = 'La suma de $(numb1) + $(numb2) es $(total)'
+    const txt = `La suma de ${numb1} + ${numb2} es ${total}`
     divApp.innerHTML = txt
 }
 
