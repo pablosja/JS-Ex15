@@ -1,16 +1,22 @@
-let numeroUno = document.getElementById('numeroUno');
-let numeroDos = document.getElementById('numeroDos');
-let boton = document.getElementById('btn');
-let resultado = document.getElementById('resultado')
-let infoUno = numeroUno.value
-let infoDos = numeroDos.value
 
-boton.addEventListener('click',() => {
-    let suma = parseFloat(infoUno) + parseFloat(infoDos);
-    resultado.innerHTML = 'el resultado de la suma es' + suma
+let button = document.getElementById('btn')
+
+function suma(joker, riddler) {
+    let resultado = parseInt(joker) + parseInt(riddler);
+    return resultado
+}
+
+function render(jok, rid, score) {
+    const divApp = document.getElementById('app')
+    const txt = `La suma de ${jok} + ${rid} es ${score}`
+    divApp.innerHTML = txt
+}
+
+button.addEventListener('click', () => {
+    let fig1 = parseInt(document.getElementById('numeroUno').value)
+    let fig2 = parseInt(document.getElementById('numeroDos').value)
+    render(fig1,fig2,suma(fig1,fig2))
 })
-
-
 
 
 /* function sumarNumeros() {

@@ -11,9 +11,9 @@ function sum(num1, num2) {
     return total
 }
 
-function render(num1,num2,total) {
+function render(num1,num2,resultado) {
     const divApp = document.getElementById('app')
-    const txt = `La suma de ${numb1} + ${numb2} es ${total}`
+    const txt = `La suma de ${num1} + ${num2} es ${resultado}`
     divApp.innerHTML = txt
 }
 

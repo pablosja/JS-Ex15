@@ -23,16 +23,16 @@ btnValidate.addEventListener('click', () => {
     render(username)
 })
 
-function render(username) {
+function render(joker) {
 
-    if (isEmpty(username)) {
+    if (isEmpty(joker)) {
         mainBlock.innerHTML = `<span>Debe introducir su nombre</span>`
         return
     }
-        mainBlock.innerHTML = `<span>Hola ${username}</span>`
+        mainBlock.innerHTML = `<span>Hola ${joker}</span>`
 }
 
-function isEmpty(username) {
-    const stringLength = username.length
+function isEmpty(riddler) {
+    const stringLength = riddler.length
     return (stringLength === 0) ? true : false
 }
